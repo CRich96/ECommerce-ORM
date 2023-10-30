@@ -23,6 +23,7 @@ router.get('/', (req, res) => {
     });
 });
 router.get('/:id', (req, res) => {
+  console.log(req.params)
   // find one category by its `id` value
   // be sure to include its associated Products
   Category.findOne({
@@ -70,8 +71,9 @@ router.put('/:id', (req, res) => {
     }
   })
     .then(dbCategoryData => {
+      console.log(dbCategoryData[0])
       if (!dbCategoryData[0]) {
-        res.status(404).json({ message: 'No Category found with this id' });
+        res.status(404).json({ message: 'was not able to update' });
         return;
       }
       res.json(dbCategoryData);

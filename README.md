@@ -1,6 +1,10 @@
 # ECommerce-ORM
 
 
+**[Seed and Schema](https://youtu.be/J_cK0dDeexY)**
+**[Walkthrough](https://youtu.be/LKBTRjgcqjM)**
+
+
 ### User Story
 
 AS A manager at an internet retail company
